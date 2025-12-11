@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary: #00ad6a;
+  --secondary: #1fe374;
+}
+
+@layer utilities {
+  .title {
+    display: flex;
+    justify-content: center;
+    div {
+      @apply w-full md:w-[50%];
+      text-align: center;
+      h3 {
+        line-height: 3rem;
+        margin-bottom: 1rem;
+        @apply font-black;
+        @apply text-2xl md:text-4xl;
+      }
+      p {
+        @apply font-thin text-lg;
+      }
+    }
+  }
+  .word-space-2 {
+    word-spacing: 2px;
+  }
+  .text-color {
+    color: var(--primary);
+  }
+
+  .text-color-secondary {
+    color: var(--secondary);
+  }
+
+  .bg-primary {
+    background-color: var(--primary);
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page {
+    @apply py-10;
+    @apply md:py-15;
+    @apply lg:py-20;
+  }
+
+  .main-animation {
+    @apply relative;
+  }
+
+  .main-animation::before {
+    content: '';
+    @apply absolute right-0 top-0 w-full h-full bg-[var(--primary)] -z-2;
+  }
+
+  .main-animation:hover {
+    @apply -top-2 -right-2;
+  }
+
+  .main-animation:hover::before {
+    @apply top-2 right-2;
+  }
+}
+
+@layer base {
+  p {
+    color: hsl(0, 0%, 40%);
+    line-height: 1.7em;
+    // font-size: 1rem;
+  }
+}
+
+@theme {
+  --color-muted: hsl(0, 0%, 65%);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  // --breakpoint-sm: 47rem;
+  // --breakpoint-md: 244rem;
+  // --breakpoint-lg: 294rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+}
