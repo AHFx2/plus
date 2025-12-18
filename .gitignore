@@ -45,3 +45,5 @@ tsconfig.spec.json
 tsconfig.json
 .postcssrc.json
 .editorconfig
+
+*.md
