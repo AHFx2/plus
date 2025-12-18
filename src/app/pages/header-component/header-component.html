@@ -18,13 +18,13 @@
     </div>
     <div class="container hidden md:block">
         <nav class="flex justify-between felx items-center py-4 md:py-12 md:gap-[3rem]">
-            <div class=""><img src="https://pulseapp.com/img/pulse-logo.svg" alt=""></div>
+            <div class="cursor-pointer" routerLink="/landing"><img src="https://pulseapp.com/img/pulse-logo.svg" alt=""></div>
             <ul class="flex justify-between gap-8 lg:gap-[3rem] items-center">
-                <li><a href="#" class="text-color font-bold">Features</a></li>
-                <li><a href="#" class="text-color font-bold">Customer Stories</a></li>
+                <li><a routerLink="/features" routerLinkActive="text-white" class="text-color font-bold">Features</a></li>
+                <li><a routerLink="/customerstories" routerLinkActive="text-white" class="text-color font-bold">Customer Stories</a></li>
                 <li><a routerLink="/pricing" routerLinkActive="text-white" class="text-color font-bold">Pricing</a></li>
-                <li><a href="#" class="text-color font-bold">Blog</a></li>
-                <li class="main-animation inline-block w-fit border-1 px-5 py-2">Sign Up</li>
+                <li><a routerLink="/blogs" routerLinkActive="text-white" class="text-color font-bold">Blog</a></li>
+                <li routerLink="/signup" class="main-animation inline-block w-fit border-1 px-5 py-2 cursor-pointer">Sign Up</li>
             </ul>
         </nav>
     </div>

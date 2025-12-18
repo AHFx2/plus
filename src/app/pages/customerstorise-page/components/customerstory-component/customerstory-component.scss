@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+.questions {
+    div {
+        h2 {
+            @apply text-gray-600 font-black;
+        }
+        p {
+            @apply mt-10 text-lg text-gray-600;
+            word-spacing: 2px;
+        }
+
+        blockquote {
+            @apply ml-10 mr-10 my-10;
+        }
+    }
+
+    div:not(:first-of-type) h2 {
+        @apply mt-10;
+    }
+}

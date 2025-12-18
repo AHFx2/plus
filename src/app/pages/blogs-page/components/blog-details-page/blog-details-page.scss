@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+.post-content {
+    div {
+        @apply flex flex-col gap-5 justify-between;
+        h2 {
+            @apply font-black text-4xl my-5;
+        }
+
+        p {
+            word-spacing: 2px;
+        }
+
+        q {
+            @apply font-black text-2xl my-5;
+        }
+    }
+}

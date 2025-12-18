@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+.input-container {
+    @apply flex flex-col;
+    input {
+        @apply rounded-sm inset-shadow-sm py-2 px-2 border-2 border-gray-200;
+    }
+
+    input:active {
+        // @apply bg-black
+    }
+
+    label {
+        @apply text-sm text-gray-500 capitalize;
+    }
+}
+
+.input {
+    @apply rounded-sm inset-shadow-sm py-2 px-2 border-2 border-gray-200;
+}

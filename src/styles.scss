@@ -7,6 +7,7 @@
 :root {
   --primary: #00ad6a;
   --secondary: #1fe374;
+  --foreign: #cefcd6;
 }
 
 @layer utilities {
@@ -80,12 +81,18 @@
     line-height: 1.7em;
     // font-size: 1rem;
   }
+
+  img {
+    // height: 100%;
+    // width: 100%;
+  }
 }
 
 @theme {
   --color-muted: hsl(0, 0%, 65%);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-foreign: #cefcd6;
   // --breakpoint-sm: 47rem;
   // --breakpoint-md: 244rem;
   // --breakpoint-lg: 294rem;
